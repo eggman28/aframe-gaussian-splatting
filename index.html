@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="https://quadjr.github.io/aframe-gaussian-splatting/index.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D scenes</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
   </head>
   <body>
-    <a-scene renderer="antialias: false" stats>
-<!--       <a-entity position="0 1.6 -2.0" animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true">
-        <a-sphere position="0 0 0.5" radius="0.5" color="#EF2D5E"></a-sphere>
-        <a-sphere position="0 0 -0.5" radius="0.5" color="#EF2D5E"></a-sphere>
-      </a-entity> -->
-                  <a-entity
-        gltf-model="https://eggman.github.io/aframe-gaussian-splatting/models/dragon_animation_flying.glb"
-        scale="1 1 1"
-        position="0 1.6 -2.0" 
-        animation-mixer="clip: flying; loop: repeat"
-                    
-                >
-            </a-entity>
-      <a-entity gaussian_splatting="src: https://eggman.github.io/aframe-gaussian-splatting/splat/hp-castle-gaussian_splatting_point_cloud.splat;" rotation="0 0 0" position="0 1.5 -2"></a-entity>
-      <a-sky color="#000"></a-sky>
-    </a-scene>
+    <!--
+      The body includes the content you see in the page
+      Each element is defined using tags, like this <div></div>
+      The attributes like class="wrapper" let us style elements in the CSS
+    -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">3D Scenes</h1>
+
+        <div class="instructions">
+          <h2>Captured as Gaussian Splats</h2>
+          <p>
+            <a href="bonsai1.html">Bonsai 1</a>
+          </p>
+          <p>
+            <a href="bonsai2.html">Bonsai 2</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
